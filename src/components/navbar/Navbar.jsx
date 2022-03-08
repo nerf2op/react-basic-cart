@@ -24,7 +24,6 @@ const Navbar = ({ onSearch, cartCount }) => {
             onSearch(typedItem);
           }}
         >
-          {" "}
           Search ({cartCount})
         </button>
       </div>
