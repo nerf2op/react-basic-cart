@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Cart from "./Cart";
 import "./navbar.css";
-const Navbar = ({ onSearch, cartCount }) => {
+const Navbar = ({onSearch, cartCount,cartData}) => {
   const [typedItem, setTypedItem] = useState("");
 
   return (
@@ -27,6 +28,7 @@ const Navbar = ({ onSearch, cartCount }) => {
           Search ({cartCount})
         </button>
       </div>
+      <Cart cartData={cartData}/>
     </div>
   );
 };
